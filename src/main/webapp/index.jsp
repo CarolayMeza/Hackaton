@@ -11,8 +11,8 @@
 
 <body>
 	<ul class="login">
-		<li><a href="#">Login Inversionistas</a></li>
-		<li><a href="#">Login Agricultor</a></li>
+		<li><a href="loginInver.jsp">Login Inversionistas</a></li>
+		<li><a href="logincampe.jsp">Login Agricultor</a></li>
 		<li><a href="#">Salir</a></li>
 	</ul>
 
