@@ -1,7 +1,9 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("Imagen/fondo1.png");
+    background-image: url("../Imagen/fondo1.png");
+    background-repeat: repeat-y;
+    background-size: auto;
 
 }
 
@@ -17,37 +19,29 @@ body{
 /*Edita el menu en el cual se encuentra el home*/
 .menu-area{
     list-style: none;
-    background: #0b986a;
-    padding: 0;
-    max-width: 100%;
-    margin: auto;
-    max-height: 50px;
-    
-
+    height: 60px;
+    cursor: pointer;
+}
+.menu-area div{
+    float: right;
 }
 
-.menu-area li a{
+.menu-area div a{
     text-decoration: none;
-    color: white;
+    color: rgb(46, 45, 45);
+    font-weight: bold;
     padding: 15px;
     display: block;
-    align-items: center;
     border-radius: 80px;
-    margin-top: 10;
-    margin-left: 15px;
 }
 
-.menu-area li{
-    display: inline-block;
-    
-}
-
-.menu-area li a:hover{
-    background: #ff6961;
+.menu-area div a:hover{
+    background: #0b986a;
+    color: white;
 }
 
 /*Edita el icono en la barra del menu*/
-.menu-area li img{
+.menu-area ul li img{
     position: relative;
     display: block;
     width: 50px;
@@ -64,6 +58,11 @@ body{
     width: 100%;
     margin-left: 73%;
     max-width: 1000px;
+    
+    
+}
+.login div{
+    float: left;
 }
 
 .login a {
@@ -71,24 +70,68 @@ body{
     color: #0b986a;
     padding: 10px;
     border-radius: 50px;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .login a:hover{
     background: #ff6961;
     color: white;
-}
-
-/*
-.login a{
-    text-decoration: none;
-    color: #0b986a;
-    padding: 20px;
-    display: block;
-    border-radius: 50px; 
-    display: inline-block;
-    text-align: center;
+    
 }
 
 
-*/
+.img1{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
+.img1 img{
+    height: auto;
+    width: 600px;
+    float: left;
+}
+
+.titel1{
+    margin-left: 140px;
+    color: rgb(46, 45, 45);
+}
+
+.parrafos1 div{
+	margin-left: 80px;
+}
+
+.clear{
+	clear: both;
+}
+
+
+.caja1{
+	height: 15px;
+    width: 50px;
+    border-radius: 10px;
+    background: #0b986a;
+    position: absolute;
+    top: 65px;
+    left: 100px;
+}
+
+.caja2{
+	height: 15px;
+    width: 30px;
+    border-radius: 10px;
+    background: #ff6961;
+    position: absolute;
+    top: 60px;
+    left: 155px;
+}
+
+.caja3{
+	height: 15px;
+    width: 50px;
+    border-radius: 10px;
+    background: #0b986a;
+    position: absolute;
+    top: 65px;
+    left: 190px;
+}

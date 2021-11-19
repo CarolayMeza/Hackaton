@@ -11,8 +11,16 @@
 <body>
 	<jsp:include page="head.jsp" />
 
-	<h1>Acerca de nosotros</h1>
+	
 
+	<div class="img1">
+		<div class="titel1"><h1>Agricultor Online</h1></div>
+		<div>
+			<img id="img1" src="Imagen/img1.png" alt="a ver">
+		</div>
+	
+		
+	</div class="parrafos1">
 	<div>
 		<h3>Lorem, ipsum dolor.</h3>
 		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corporis aperiam animi, quas eos obcaecati ullam doloremque quibusdam, illum nemo quam similique tempora dicta? Suscipit culpa hic doloribus sed cumque?</p>
@@ -25,11 +33,11 @@
 		<img src="#" alt="">
 	</div>
 
-	<div>
+	<div class="clear">
 		<h3>Lorem, ipsum dolor.</h3>
 		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corporis aperiam animi, quas eos obcaecati ullam doloremque quibusdam, illum nemo quam similique tempora dicta? Suscipit culpa hic doloribus sed cumque?</p>
 		<img src="#" alt="">
 	</div>
-
+	
 </body>
 </html>
