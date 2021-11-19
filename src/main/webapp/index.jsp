@@ -6,29 +6,10 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>SOBRE NOSOTROS</title>
-	<link rel="stylesheet"  href="..//webapp//Css//style.css">
+	<link rel="stylesheet"  href="Css/style.css">
 </head>
-
 <body>
-	<ul class="login">
-		<li><a href="#">Login Inversionistas</a></li>
-		<li><a href="#">Login Agricultor</a></li>
-		<li><a href="#">Salir</a></li>
-	</ul>
-
-	<ul class="menu-area">
-		<li> 
-			<a href="#">
-				<img src="../webapp/Imagen/Logo1.jpg" alt="Logotipo" class="icon">
-				<span class="title">Nombre</span>
-			</a>
-		</li>
-		<li><a href="#">Inicio</a></li>
-		<li><a href="#">Agricultores</a></li>
-		<li><a href="#">Inversionistas</a></li>
-		<li><a href="#">Derechos de autor</a></li>
-		
-	</ul>
+	<jsp:include page="head.jsp" />
 
 	<h1>Acerca de nosotros</h1>
 

@@ -1,32 +1,45 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: white;
+    background-image: url("Imagen/fondo1.png");
 
 }
 
+/*Variables para los colores*/
+:root{
+    --verde1: #0b986a;
+    --verde2: #69d0a3;
+    --verde3: #8decb9;
+    --rosa1: #ff6961;
+    --rosa2: #ff7c70;
+}
 
 /*Edita el menu en el cual se encuentra el home*/
 .menu-area{
     list-style: none;
-    padding: 0;
     background: #0b986a;
-    width: 100%;
+    padding: 0;
     max-width: 100%;
     margin: auto;
+    max-height: 50px;
+    
+
 }
 
 .menu-area li a{
     text-decoration: none;
     color: white;
-    padding: 20px;
+    padding: 15px;
     display: block;
     align-items: center;
+    border-radius: 80px;
+    margin-top: 10;
+    margin-left: 15px;
 }
 
 .menu-area li{
     display: inline-block;
-
+    
 }
 
 .menu-area li a:hover{
@@ -34,12 +47,12 @@ body{
 }
 
 /*Edita el icono en la barra del menu*/
-.menu-area li a.icon{
+.menu-area li img{
     position: relative;
     display: block;
-    min-width: 60px;
-    height: 60px;
-    line-height: 70px;
+    width: 50px;
+    height: 70px;
+    
     text-align: center;
 }
 
@@ -47,27 +60,35 @@ body{
 /*Edita los botones de login*/
 .login{
     list-style: none;
-    padding: 0;
-    background: #0b986a;
+    padding-top: 8px;
     width: 100%;
-    margin: auto;
+    margin-left: 73%;
+    max-width: 1000px;
 }
 
-.login li a{
+.login a {
     text-decoration: none;
+    color: #0b986a;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.login a:hover{
+    background: #ff6961;
     color: white;
+}
+
+/*
+.login a{
+    text-decoration: none;
+    color: #0b986a;
     padding: 20px;
     display: block;
-
-}
-
-.login li{
+    border-radius: 50px; 
     display: inline-block;
     text-align: center;
 }
 
-.login li a:hover{
-    background: #ff6961;
-}
 
+*/
 
