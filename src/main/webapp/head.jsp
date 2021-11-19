@@ -14,8 +14,8 @@
 	<div class="caja3"></div>
 	
     <div class="login">
-    	<div><a href="#">Login Inversionistas</a></div>
-    	<div><a href="#">Login Agricultor</a></div>
+    	<div><a href="loginInver.jsp">Login Inversionistas</a></div>
+    	<div><a href="logincampe.jsp">Login Agricultor</a></div>
     	<div><a href="#">Salir</a></div>
 	</div>
 	
@@ -24,9 +24,9 @@
 	<div class="menu-area">
 			<!--<li><img class="icon" src="../webapp/Imagen/Logo1.jpg" alt="Logotipo"></li>-->
 			<div><a href="#">Politicas de uso</a></div>
-			<div><a href="#">Inversionistas</a></div>
-			<div><a href="#">Agricultores</a></div>
-			<div><a href="#">Inicio</a></div>
+			<div><a href="inversionista.jsp">Inversionistas</a></div>
+			<div><a href="agricultor.jsp">Agricultores</a></div>
+			<div><a href="index.jsp">Inicio</a></div>
 			<div><a href="#">Nombre</a></div>		
 	</div>
 </body>
