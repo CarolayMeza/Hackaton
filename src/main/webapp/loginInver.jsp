@@ -27,10 +27,10 @@
 	rel="stylesheet"
 	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="Css\style.css"> 
+<link rel="stylesheet" href="Css\style.css">
 <title>Website Click</title>
 </head>
-<body >
+<body>
 
 	<%!
     String ced="", cliente="";
@@ -50,21 +50,21 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 
 	<div class="container text-center my-5">
-		<a class="tiendavirtual" href="index.jsp"><img
-			style="border-radius: 20px;" src="Imagen/Logo1.jpg"
-			class="img-luid" alt=""></a>
+		<a class="Hackaton" href="index.jsp"><img
+			style="border-radius: 20px;" src="Imagen/Logo1.jpg" class="img-luid"
+			alt=""></a>
 	</div>
 
 
 	<section>
 
-		<div  class="container">
+		<div class="container">
 
 
-			<div  class="row justify-content-center">
+			<div class="row justify-content-center">
 				<div align='center' class="col-lg-7  text-center">
 					<h1 style="color: white">BIENVENIDO ADMINISTRADOR</h1>
-					<h1 style="color: white">inicio sesiï¿½n</h1>
+					<h1 style="color: white">inicio sesión</h1>
 					<div class="col my-3 text-center">
 
 
@@ -77,12 +77,11 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 							<!--  Ingresando contraseï¿½a admin123456 -->
 
-							<input type="password" name="Contraseï¿½a" placeholder="********"
-								class="form-control my-3 p-4 text-center"> 
-								
-							<input type="submit" name="Ingreso" value="Ingresar"
+							<input type="password" name="Contraseña" placeholder="********"
+								class="form-control my-3 p-4 text-center"> <input
+								type="submit" name="Ingreso" value="Ingresar"
 								class="btn btn-info mt-3px mb-5 text-center"> <a
-								href="productos.jsp"></a>
+								href="index.jsp"></a>
 						</form>
 					</div>
 				</div>
