@@ -28,7 +28,8 @@
 	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="Css\style.css">
-<title>Website Click Inversionista</title>
+
+<title>Website Click Campesino</title>
 </head>
 <body>
 
@@ -63,7 +64,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 			<div class="row justify-content-center">
 				<div align='center' class="col-lg-7  text-center">
-					<h1 style="color: white">BIENVENIDO INVERSIONISTA</h1>
+					<h1 style="color: white">BIENVENIDO AGRICULTOR</h1>
 					<h1 style="color: white">inicio sesión</h1>
 					<div class="col my-3 text-center">
 
