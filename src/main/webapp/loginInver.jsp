@@ -27,17 +27,15 @@
 	rel="stylesheet"
 	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="./Css/style.css "> 
+<link rel="stylesheet" href="Css\style.css"> 
 <title>Website Click</title>
 </head>
-<body style="background: url(Imagen/fondo.jpg)">
+<body >
 
 	<%!
     String ced="", cliente="";
     
     %>
-
-
 
 	<%
 if(request.getParameter("men")!=null){
@@ -66,7 +64,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 			<div  class="row justify-content-center">
 				<div align='center' class="col-lg-7  text-center">
 					<h1 style="color: white">BIENVENIDO ADMINISTRADOR</h1>
-					<h1 style="color: white">inicio sesión</h1>
+					<h1 style="color: white">inicio sesiï¿½n</h1>
 					<div class="col my-3 text-center">
 
 
@@ -77,9 +75,9 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 								name="Correo" class="form-control my-3 p-4 text-center">
 
 
-							<!--  Ingresando contraseña admin123456 -->
+							<!--  Ingresando contraseï¿½a admin123456 -->
 
-							<input type="password" name="Contraseña" placeholder="********"
+							<input type="password" name="Contraseï¿½a" placeholder="********"
 								class="form-control my-3 p-4 text-center"> 
 								
 							<input type="submit" name="Ingreso" value="Ingresar"
