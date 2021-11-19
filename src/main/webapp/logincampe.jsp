@@ -31,7 +31,7 @@
 
 <title>Website Click Campesino</title>
 </head>
-<body>
+<body style="background: url(Imagen/fondo.jpg)">
 
 	<%!
     String ced="", cliente="";
@@ -82,7 +82,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 								class="form-control my-3 p-4 text-center"> <input
 								type="submit" name="Ingreso" value="Ingresar"
 								class="btn btn-info mt-3px mb-5 text-center"> <a
-								href="index.jsp"></a>
+								href="agricultor.jsp"></a>
 						</form>
 					</div>
 				</div>
