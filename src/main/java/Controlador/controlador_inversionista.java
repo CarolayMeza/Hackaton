@@ -51,18 +51,19 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	
 	if(request.getParameter("buscar")!=null) {
 		 
-		String Nombre_inversionista,Apellido_inversionista,Correo_inversionista,Telefono_iversionista,Cedula_inversionista,Contrasena_inversionista;
+		String Nombre_inversionista,Apellido_inversionista,Correo_inversionista,Telefono_iversionista,Cedula_inversionista,Contrasena_inversionista, Fotos_inversionista;
 		
 		Cedula_inversionista=request.getParameter("cedula");
 		inversionistaDTO Buscadto=inversioDao.Buscar_Inversionista(Cedula_inversionista);
 		if(Buscadto!=null) {
-		cedula_cliente=Buscadto.getCedula();
-		direccion= Buscadto.getDireccion();
-	    correo = Buscadto.getCorreo();
-		nombre= Buscadto.getNombre();
-		telefono=Buscadto.getTelefono();
+		Cedula_inversionista=Buscadto.getCedula_inversionista();
+		Nombre_inversionista= Buscadto.getNombre_inversionista();
+		Correo_inversionista = Buscadto.getCorreo_inversionista();
+		Telefono_iversionista= Buscadto.getTelefono_iversionista();
+		Contrasena_inversionista=Buscadto.getContrasena_inversionista();
+		Fotos_inversionista=Buscadto.getFotos_inversionista();
 		
-		response.sendRedirect("clientes.jsp?cedula="+cedula_cliente+"&&direccion="+direccion+"&&correo="
+		response.sendRedirect("inversionista.jsp?cedula="+Cedula_inversionista+"&&direccion="+direccion+"&&correo="
 		+correo+"&&nombre="+nombre+"&&telefono="+telefono);
 }else {
 	response.sendRedirect("clientes.jsp?men=El cliente no existe");
@@ -77,7 +78,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 		nombre = request.getParameter("nombre");	
 		telefono=request.getParameter("telefono");
 		
-		clientesDTO clientDto_Act = new clientesDTO(cedula_cliente,direccion,correo,nombre,telefono);
+		inversionistaDTO clientDto_Act = new inversionistaDTO(cedula_cliente,direccion,correo,nombre,telefono);
 		if(clientDao.Actualizar_Cliente(clientDto_Act)) {
 	//	JOptionPane.showMessageDialog(null, "Cliente se Actualizo Exitosamente.");
 			response.sendRedirect("clientes.jsp?men=Cliente Actualizado Exitosamente.");
