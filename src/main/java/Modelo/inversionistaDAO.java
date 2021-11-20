@@ -19,7 +19,7 @@ public class inversionistaDAO {
 	public boolean Crear_Inversionista(inversionistaDTO inversionista) {
 		boolean resul = false;
 		try {
-			String sql = "insert into Clientes values(?,?,?,?,?)";
+			String sql = "insert into inversionista values(?,?,?,?,?,?)";
 			ps = con.prepareStatement(sql);
 			ps.setString(1, inversionista.getNombre_inversionista());
 			ps.setString(2, inversionista.getApellido_inversionista());
@@ -27,7 +27,6 @@ public class inversionistaDAO {
 			ps.setString(4, inversionista.getTelefono_iversionista());
 			ps.setString(5, inversionista.getCedula_inversionista());
 			ps.setString(6, inversionista.getContrasena_inversionista());
-			ps.setString(7, inversionista.getFotos_inversionista());
 			
 			resul = ps.executeUpdate() > 0;
 			JOptionPane.showMessageDialog(null, " Cliente insertado ");
@@ -41,7 +40,7 @@ public class inversionistaDAO {
 
 		inversionistaDTO user = null;
 		try {
-			String sql = "select * from Clientes where cedula_cliente=?";
+			String sql = "select * from inversionista where Cedula_inversionista=?";
 			ps = con.prepareStatement(sql);
 			ps.setString(1, cedula);
 			res = ps.executeQuery();
@@ -60,7 +59,7 @@ public class inversionistaDAO {
 	public boolean Actualizar_Inversionista(inversionistaDTO user) {
 		boolean resul = false;
 		try {
-			String sql = "update Clientes set direccion_cliente=?, email_cliente=?,nombre_cliente=?, telefonono_cliente=? where cedula_cliente=?";
+			String sql = "update inversionista set Nombre_inversionista=?, Apellido_inversionista=?,Correo_inversionista=?, Telefono_iversionista=?, Contrasena_inversionista=?, Fotos_inversionista=? where Cedula_inversionista=?";
 			ps = con.prepareStatement(sql);
 
 			ps.setString(1, user.getNombre_inversionista());
@@ -99,7 +98,7 @@ public class inversionistaDAO {
 		inversionistaDTO inversionista=null;
 			ArrayList<inversionistaDTO> lista2= new ArrayList<>();
 			try {
-			String sql="select * from Clientes";
+			String sql="select * from inversionistas";
 			ps= con.prepareStatement(sql);
 			res=ps.executeQuery();
 			while(res.next()) {

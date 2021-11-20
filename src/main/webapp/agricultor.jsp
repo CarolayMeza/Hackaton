@@ -65,7 +65,7 @@
 				<div class="col-lg-7 px-5 pt-5">
 					<h1 style="color: #FFFFFF" class="font-weight-bold py-3">Ingrese
 						datos del inversionista</h1>
-					<form action="controlador_campesinos" method="post">
+					<form action="controlador_agricultor" method="post">
 						<div class="from-row">
 							<div class="col-lg-7">
 								<input type="text" placeholder="nombre"

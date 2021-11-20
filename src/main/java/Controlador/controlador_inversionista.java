@@ -93,22 +93,22 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	if (request.getParameter("borrar")!=null) {
 			
 			String Cedula_inversionista;
-			Cedula_inversionista=request.getParameter("cedula");
+			Cedula_inversionista=request.getParameter("Cedula_inversionista");
 			
 			int op = 0;
 			//	int op=JOptionPane.showConfirmDialog(null, "Desea eliminar el Cliente de la :"+cedula_cliente);
 			if(op==0) {
 			if(inversioDao.Eliminar_Inversionista(Cedula_inversionista)) {
-				response.sendRedirect("clientes.jsp?men=Usuario Eliminado");
+				response.sendRedirect("inversionista.jsp?men=Usuario Eliminado");
 				
 			}else {
-				response.sendRedirect("clientes.jsp?men=Usuario no se Eliminó");
+				response.sendRedirect("inversionista.jsp?men=Usuario no se Eliminó");
 
 			}
 			
 			
 		}else {
-			response.sendRedirect("clientes.jsp");
+			response.sendRedirect("inversionista.jsp");
 
 		}
 		
