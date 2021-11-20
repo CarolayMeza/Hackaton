@@ -8,10 +8,11 @@
 <link rel="stylesheet"  href="Css/style2.css">
 </head>
 <body>
-
-	<div class="caja1"></div>
+	
+	<!--<div class="caja1"></div>
 	<div class="caja2"></div>
-	<div class="caja3"></div>
+	<div class="caja3"></div>-->
+	<div class="caja4"><img src="Imagen/logo.png" alt=""></div>
 	
     <div class="login">
     	<div><a href="index.jsp">Salir</a></div>

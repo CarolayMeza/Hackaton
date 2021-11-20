@@ -3,7 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <link rel="stylesheet"  href="Css/style.css">
 <link rel="stylesheet"  href="Css/normalize.css">
-<title>Inicio de Sesi�n de Inversionistas</title>
+<title>Inicio de Sesión de Inversionistas</title>
 </head>
 <body>
 <jsp:include page="head.jsp" />
@@ -59,7 +59,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 						<i class="fas fa-lock"></i>
 					</label>
 				</div>
-				<a href="inversionista.jsp">�Registrarse?</a>
+				<a href="inversionista.jsp">¿Registrarse?</a>
 				<input type="submit" name="Ingreso" value="Ingresar" class="btn-login"> 
 			</form>
 		</div>
