@@ -10,7 +10,6 @@
 <link rel="stylesheet"  href="Css/normalize.css">
 <title>Web Inversionista</title>
 </head>
-<%-- ESTE ES NUESTRO CABECERO --%>
 
 <body>
 <jsp:include page="head3.jsp" />
