@@ -16,7 +16,7 @@
 <link rel="stylesheet"  href="Css/style.css">
 <link rel="stylesheet"  href="Css/normalize.css">
 
-<title>Inicio de Sesiï¿½n de Agricultores</title>
+<title>Inicio de Sesión de Agricultores</title>
 </head>
 <body>
 <jsp:include page="head.jsp" />
