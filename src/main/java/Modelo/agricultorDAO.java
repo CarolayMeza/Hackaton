@@ -19,13 +19,13 @@ public class agricultorDAO {
 	public boolean Crear_Cliente(agricultorDTO agricultor) {
 		boolean resul = false;
 		try {
-			String sql = "insert into Clientes values(?,?,?,?,?,?,? )";
+			String sql = "insert into campesino values(?,?,?,?,?,?,? )";
 			ps = con.prepareStatement(sql);
 			ps.setString(1, agricultor.getNombre_campesino());
-			ps.setString(2, agricultor.getCedula_campesino());
+			ps.setString(2, agricultor.getApellido_campesino());
 			ps.setString(3, agricultor.getCorreo_campesino());
-			ps.setString(4, agricultor.getCedula_campesino());
-			ps.setString(5, agricultor.getTelefono_campesino());
+			ps.setString(4, agricultor.getTelefono_campesino());
+			ps.setString(5, agricultor.getCedula_campesino());
 			ps.setString(6, agricultor.getContrasena_campesino());
 			ps.setString(7, agricultor.getFotos_campesino());
 			
@@ -41,7 +41,7 @@ public class agricultorDAO {
 
 		agricultorDTO user = null;
 		try {
-			String sql = "select * from Clientes where cedula_cliente=?";
+			String sql = "select * from campesinos where Cedula_campesino=?";
 			ps = con.prepareStatement(sql);
 			ps.setString(1, cedula);
 			res = ps.executeQuery();
@@ -60,14 +60,14 @@ public class agricultorDAO {
 	public boolean Actualizar_Cliente(agricultorDTO user) {
 		boolean resul = false;
 		try {
-			String sql = "update Clientes set direccion_cliente=?, email_cliente=?,nombre_cliente=?, telefonono_cliente=? where cedula_cliente=?";
+			String sql = "update campesinos set Nombre_campesino=?, Apellido_campesino=?,Correo_campesino=?, Telefono_campesino=?, Contrasena_campesino=?, Fotos_campesino=? where Cedula_campesino=?";
 			ps = con.prepareStatement(sql);
 
 			ps.setString(1, user.getNombre_campesino());
-			ps.setString(2, user.getCedula_campesino());
+			ps.setString(2, user.getApellido_campesino());
 			ps.setString(3, user.getCorreo_campesino());
-			ps.setString(4, user.getCedula_campesino());
-			ps.setString(5, user.getTelefono_campesino());
+			ps.setString(4, user.getTelefono_campesino());
+			ps.setString(5, user.getCedula_campesino());
 			ps.setString(6, user.getContrasena_campesino());
 			ps.setString(7, user.getFotos_campesino());
 			
@@ -82,7 +82,7 @@ public class agricultorDAO {
 	public boolean Eliminar_Cliente(String auxcedula) {
 		boolean resul = false;
 		try {
-			String sql = "delete from Clientes where cedula_cliente=?";
+			String sql = "delete from campesino where Cedula_campesino=?";
 			ps = con.prepareStatement(sql);
 
 			ps.setString(1, auxcedula);
@@ -99,7 +99,7 @@ public class agricultorDAO {
 		agricultorDTO cliente=null;
 			ArrayList<agricultorDTO> lista2= new ArrayList<>();
 			try {
-			String sql="select * from Clientes";
+			String sql="select * from campesino";
 			ps= con.prepareStatement(sql);
 			res=ps.executeQuery();
 			while(res.next()) {

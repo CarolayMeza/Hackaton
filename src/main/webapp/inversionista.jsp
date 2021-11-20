@@ -1,11 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Chewy&family=Lobster&family=Overlock:ital@1&family=Yeseva+One&display=swap"
+	rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="Css/styles.css">
 <title>Web Inversionista</title>
 </head>
+<%-- ESTE ES NUESTRO CABECERO --%>
+<jsp:include page="head.jsp" /> 
+
 <body>
 <%!String mensaje = "";
 	String nombre = "", apellido = "", correo = "", telefono = "", cedula = "", contrasenia = "",estado="";%>
@@ -43,7 +64,7 @@
 				<div class="col-lg-5"></div>
 				<div class="col-lg-7 px-5 pt-5">
 					<h1 style="color: #FFFFFF" class="font-weight-bold py-3">Ingrese
-						datos del cliente</h1>
+						datos del inversionista</h1>
 					<form action="controlador_campesinos" method="post">
 						<div class="from-row">
 							<div class="col-lg-7">
