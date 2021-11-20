@@ -79,10 +79,10 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 							<!--  Ingresando contraseï¿½a admin123456 -->
 
 							<input type="password" name="Contraseña" placeholder="********"
-								class="form-control my-3 p-4 text-center"> <input
-								type="submit" name="Ingreso" value="Ingresar"
-								class="btn btn-info mt-3px mb-5 text-center"> <a
-								href="agricultor.jsp"></a>
+								class="form-control my-3 p-4 text-center">
+							<input type="submit" name="Ingreso" value="Ingresar"
+								class="btn btn-info mt-3px mb-5 text-center"> 
+								<a href="agricultor.jsp"></a>
 						</form>
 					</div>
 				</div>
