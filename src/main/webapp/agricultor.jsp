@@ -68,48 +68,48 @@
 					<form action="controlador_agricultor" method="post">
 						<div class="from-row">
 							<div class="col-lg-7">
+								<input type="text" placeholder="cedula"
+									class="form-control my-3 p-4 " name="cedula"
+									value="<%=cedula%>" required> <input type="hidden"
+									name="cedula" value="<%=cedula%>">
+							</div>
+						</div>
+
+						<div class="from-row">
+							<div class="col-lg-7">
 								<input type="text" placeholder="nombre"
-									class="form-control my-3 p-4 " name="nombre"
-									value="<%=nombre%>" required> <input type="hidden"
-									name="nombre" value="<%=nombre%>">
+									class="form-control my-3 p-4" name="nombre"
+									value="<%=nombre%>">
 							</div>
 						</div>
 
 						<div class="from-row">
 							<div class="col-lg-7">
 								<input type="text" placeholder="apellido"
-									class="form-control my-3 p-4" name="apellido"
-									value="<%=apellido%>">
+									class="form-control my-3 p-4" name="apellido" value="<%=apellido%>">
 							</div>
 						</div>
 
 						<div class="from-row">
-							<div class="col-lg-7">
-								<input type="email" placeholder="correo electrónico"
+							<div class="col-lg-7" type="email" placeholder="correo"
+								aria-label="name">
+								<input type="text" placeholder="correo"
 									class="form-control my-3 p-4" name="correo" value="<%=correo%>">
 							</div>
 						</div>
 
-						<div class="from-row">
-							<div class="col-lg-7" type="text" placeholder="name"
-								aria-label="name">
-								<input type="text" placeholder="telefono"
-									class="form-control my-3 p-4" name="telefono" value="<%=telefono%>">
-							</div>
-						</div>
-
 
 						<div class="from-row">
 							<div class="col-lg-7">
-								<input type="number" placeholder="cedula"
-									class="form-control my-3 p-4" name="cedula"
-									value="<%=cedula%>">
+								<input type="number" placeholder="telefono"
+									class="form-control my-3 p-4" name="telefono"
+									value="<%=telefono%>">
 							</div>
 						</div>
 
 						<div class="from-row">
 							<div class="col-lg-7">
-								<input type="number" placeholder="contraseña"
+								<input type="text" placeholder="contraseña"
 									class="form-control my-3 p-4" name="contrasenia"
 									value="<%=contrasenia%>">
 							</div>
