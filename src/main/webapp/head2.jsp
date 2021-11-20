@@ -25,7 +25,7 @@
 	<div class="menu-area">
 			<!--<li><img class="icon" src="../webapp/Imagen/Logo1.jpg" alt="Logotipo"></li>-->
 			<div><a href="#">Politicas de uso</a></div>
-			<div><a href="#">Inversionistas</a></div>
+			<div><a href="ventanaInver.jsp">Inversionistas</a></div>
 			<div><a href="ventanaAgricultor.jsp">Agricultores</a></div>
 			<div><a href="index.jsp">Inicio</a></div>
 				
