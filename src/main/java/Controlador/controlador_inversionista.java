@@ -64,7 +64,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 		Cedula_inversionista=Buscadto.getCedula_inversionista();
 		Contrasena_inversionista=Buscadto.getContrasena_inversionista();
 		
-		response.sendRedirect("inversionista.jsp?cedula="+Cedula_inversionista+"&&nombre="+Nombre_inversionista+"&&apellido="+Apellido_inversionista+"&&correo="+Correo_inversionista+"&&telefono="+Telefono_iversionista+"&&contrasenia"+Contrasena_inversionista);
+		response.sendRedirect("inversionista.jsp?nombre="+Nombre_inversionista+"&&apellido="+Apellido_inversionista+"&&correo="+Correo_inversionista+"&&telefono="+Telefono_iversionista+"&&cedula="+Cedula_inversionista+"&&contrasena"+Contrasena_inversionista);
 }else {
 	response.sendRedirect("inversionista.jsp?men=El inversionista no existe");
 }
