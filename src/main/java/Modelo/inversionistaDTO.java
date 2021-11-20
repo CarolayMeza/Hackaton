@@ -5,7 +5,7 @@ public class inversionistaDTO {
    private String Nombre_inversionista;
    private String Apellido_inversionista;
    private String Correo_inversionista;
-   private String Telefono_iversionista;
+   private String Telefono_inversionista;
    private String Cedula_inversionista;
    private String Contrasena_inversionista;
    private String Fotos_inversionista;
@@ -13,13 +13,13 @@ public class inversionistaDTO {
 
 
 public inversionistaDTO(String nombre_inversionista, String apellido_inversionista, String correo_inversionista,
-		String telefono_iversionista, String cedula_inversionista, String contrasena_inversionista,
+		String Telefono_inversionista, String cedula_inversionista, String contrasena_inversionista,
 		String fotos_inversionista) {
 	
 	this.Nombre_inversionista = nombre_inversionista;
 	this.Apellido_inversionista = apellido_inversionista;
 	this.Correo_inversionista = correo_inversionista;
-	this.Telefono_iversionista = telefono_iversionista;
+	this.Telefono_inversionista = Telefono_inversionista;
 	this.Cedula_inversionista = cedula_inversionista;
 	this.Contrasena_inversionista = contrasena_inversionista;
 	this.Fotos_inversionista = fotos_inversionista;
@@ -28,14 +28,14 @@ public inversionistaDTO(String nombre_inversionista, String apellido_inversionis
 
 
 public inversionistaDTO(String nombre_inversionista, String apellido_inversionista, String correo_inversionista,
-		String telefono_iversionista, String cedula_inversionista, String contrasena_inversionista) {
+		String Telefono_inversionista, String cedula_inversionista, String contrasena_inversionista) {
 	super();
-	Nombre_inversionista = nombre_inversionista;
-	Apellido_inversionista = apellido_inversionista;
-	Correo_inversionista = correo_inversionista;
-	Telefono_iversionista = telefono_iversionista;
-	Cedula_inversionista = cedula_inversionista;
-	Contrasena_inversionista = contrasena_inversionista;
+	this.Nombre_inversionista = nombre_inversionista;
+	this.Apellido_inversionista = apellido_inversionista;
+	this.Correo_inversionista = correo_inversionista;
+	this.Telefono_inversionista = Telefono_inversionista;
+	this.Cedula_inversionista = cedula_inversionista;
+	this.Contrasena_inversionista = contrasena_inversionista;
 }
 
 
@@ -76,14 +76,14 @@ public void setCorreo_inversionista(String correo_inversionista) {
 
 
 
-public String getTelefono_iversionista() {
-	return Telefono_iversionista;
+public String getTelefono_inversionista() {
+	return Telefono_inversionista;
 }
 
 
 
-public void setTelefono_iversionista(String telefono_iversionista) {
-	Telefono_iversionista = telefono_iversionista;
+public void setTelefono_inversionista(String telefono_inversionista) {
+	Telefono_inversionista = telefono_inversionista;
 }
 
 

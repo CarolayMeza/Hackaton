@@ -26,7 +26,7 @@ public class inversionistaDAO {
 			ps.setString(1, inversionista.getNombre_inversionista());
 			ps.setString(2, inversionista.getApellido_inversionista());
 			ps.setString(3, inversionista.getCorreo_inversionista());
-			ps.setString(4, inversionista.getTelefono_iversionista());
+			ps.setString(4, inversionista.getTelefono_inversionista());
 			ps.setString(5, inversionista.getCedula_inversionista());
 			ps.setString(6, inversionista.getContrasena_inversionista());
 			
@@ -40,7 +40,7 @@ public class inversionistaDAO {
 
 	public inversionistaDTO Buscar_Inversionista(String cedula) {
 		
-		JOptionPane.showMessageDialog(null,cedula);
+		
 		inversionistaDTO user = null;
 		try {
 			String sql = "select * from inversionista where Cedula_inversionista=?";
@@ -52,7 +52,7 @@ public class inversionistaDAO {
 						res.getString(5),res.getString(6));
 			}
 		} catch (SQLException e) {
-//			JOptionPane.showMessageDialog(null,"Error al consultar" +e.getMessage());
+//			
 			System.out.println("Error al Consultar = " + e.getMessage());
 		}
 
@@ -62,14 +62,14 @@ public class inversionistaDAO {
 	public boolean Actualizar_Inversionista(inversionistaDTO user) {
 		boolean resul = false;
 		try {
-			String sql = "update inversionista set Nombre_inversionista=?, Apellido_inversionista=?,Correo_inversionista=?, Telefono_iversionista=?, Contrasena_inversionista=?, Fotos_inversionista=? where Cedula_inversionista=?";
+			String sql = "update inversionista set Nombre_inversionista=?, Apellido_inversionista=?,Correo_inversionista=?, Telefono_inversionista=?, Contrasena_inversionista=? where Cedula_inversionista=?";
 			ps = con.prepareStatement(sql);
 
 			
 			ps.setString(1, user.getNombre_inversionista());
 			ps.setString(2, user.getApellido_inversionista());
 			ps.setString(3, user.getCorreo_inversionista());
-			ps.setString(4, user.getTelefono_iversionista());
+			ps.setString(4, user.getTelefono_inversionista());
 			ps.setString(5, user.getCedula_inversionista());
 			ps.setString(6, user.getContrasena_inversionista());
 			
@@ -84,12 +84,12 @@ public class inversionistaDAO {
 	public boolean Eliminar_Inversionista(String auxcedula) {
 		boolean resul = false;
 		try {
-			String sql = "delete from Clientes where cedula_cliente=?";
+			String sql = "delete from inversionistas where Cedula_inversionista=?";
 			ps = con.prepareStatement(sql);
 
 			ps.setString(1, auxcedula);
 			resul = ps.executeUpdate() > 0;
-			JOptionPane.showMessageDialog(null, "Se elimino el Cliente");
+			JOptionPane.showMessageDialog(null, "Se elimino el inversionista");
 		} catch (SQLException ex) {
 			JOptionPane.showMessageDialog(null, "error al eliminar: " + ex);
 		}

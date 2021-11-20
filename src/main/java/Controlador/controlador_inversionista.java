@@ -51,7 +51,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	
 	if(request.getParameter("buscar")!=null) {
 		 
-		String Nombre_inversionista,Apellido_inversionista,Correo_inversionista,Telefono_iversionista,Cedula_inversionista,Contrasena_inversionista;
+		String Nombre_inversionista,Apellido_inversionista,Correo_inversionista,Telefono_inversionista,Cedula_inversionista,Contrasena_inversionista;
 		
 		Cedula_inversionista=request.getParameter("cedula");
 		inversionistaDTO Buscadto=inversioDao.Buscar_Inversionista(Cedula_inversionista);
@@ -61,32 +61,34 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 		Nombre_inversionista= Buscadto.getNombre_inversionista();
 		Apellido_inversionista =Buscadto.getApellido_inversionista();
 		Correo_inversionista = Buscadto.getCorreo_inversionista();
-		Telefono_iversionista= Buscadto.getTelefono_iversionista();
+		Telefono_inversionista= Buscadto.getTelefono_inversionista();
 		Cedula_inversionista=Buscadto.getCedula_inversionista();
 		Contrasena_inversionista=Buscadto.getContrasena_inversionista();
 		
-		response.sendRedirect("inversionista.jsp?nombre="+Nombre_inversionista+"&&apellido="+Apellido_inversionista+"&&correo="+Correo_inversionista+"&&telefono="+Telefono_iversionista+"&&cedula="+Cedula_inversionista+"&&contrasena"+Contrasena_inversionista);
+		response.sendRedirect("inversionista.jsp?nombre="+Nombre_inversionista+"&&apellido="+Apellido_inversionista+"&&correo="+Correo_inversionista+"&&telefono="+Telefono_inversionista+"&&cedula="+Cedula_inversionista+"&&contrasena"+Contrasena_inversionista);
 }else {
 	response.sendRedirect("inversionista.jsp?men=El inversionista no existe");
 }
 	}
 	if(request.getParameter("actualizar")!=null) {
-		String Nombre_inversionista,Apellido_inversionista,Correo_inversionista,Telefono_iversionista,Cedula_inversionista,Contrasena_inversionista;
 		
-		Nombre_inversionista = request.getParameter("Nombre_inversionista");
-		Apellido_inversionista = request.getParameter("Apellido_inversionista");
-		Correo_inversionista = request.getParameter("Correo_inversionista");
-		Telefono_iversionista = request.getParameter("Telefono_iversionista");
-		Cedula_inversionista = request.getParameter("Cedula_inversionista");
-		Contrasena_inversionista = request.getParameter("Contrasena_inversionista");
+		String Nombre_inversionista,Apellido_inversionista,Correo_inversionista,Telefono_inversionista,Cedula_inversionista,Contrasena_inversionista;
 		
-		inversionistaDTO inversionistaDto_Act = new inversionistaDTO(Nombre_inversionista, Apellido_inversionista, Correo_inversionista, Telefono_iversionista, Cedula_inversionista, Contrasena_inversionista, Contrasena_inversionista);
+		Nombre_inversionista = request.getParameter("nombre");
+		Apellido_inversionista = request.getParameter("apellido");
+		Correo_inversionista = request.getParameter("correo");
+		Telefono_inversionista = request.getParameter("telefono");
+		Cedula_inversionista = request.getParameter("cedula");
+		Contrasena_inversionista = request.getParameter("contrasena");
+		
+		inversionistaDTO inversionistaDto_Act = new inversionistaDTO(Nombre_inversionista, Apellido_inversionista, Correo_inversionista, Telefono_inversionista, Cedula_inversionista, Contrasena_inversionista);
+		
 		if(inversioDao.Actualizar_Inversionista(inversionistaDto_Act)) {
-	//	JOptionPane.showMessageDialog(null, "Cliente se Actualizo Exitosamente.");
-			response.sendRedirect("inversionista.jsp?men=Cliente Actualizado Exitosamente.");
+
+			response.sendRedirect("inversionista.jsp?men=Inversionista Actualizado Exitosamente.");
 		}else {
-	//	JOptionPane.showMessageDialog(null, "El Cliente no se Modifico.");
-			response.sendRedirect("inversionista.jsp?men=El Cliente no se Modifico.");
+	
+			response.sendRedirect("inversionista.jsp?men=Inversionista no se Modifico.");
 		}
 		}
 		
@@ -94,16 +96,16 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	if (request.getParameter("borrar")!=null) {
 			
 			String Cedula_inversionista;
-			Cedula_inversionista=request.getParameter("Cedula_inversionista");
+			Cedula_inversionista=request.getParameter("cedula");
 			
 			int op = 0;
 			//	int op=JOptionPane.showConfirmDialog(null, "Desea eliminar el Cliente de la :"+cedula_cliente);
 			if(op==0) {
 			if(inversioDao.Eliminar_Inversionista(Cedula_inversionista)) {
-				response.sendRedirect("inversionista.jsp?men=Usuario Eliminado");
+				response.sendRedirect("inversionista.jsp?men=Inversionista Eliminado");
 				
 			}else {
-				response.sendRedirect("inversionista.jsp?men=Usuario no se Eliminó");
+				response.sendRedirect("inversionista.jsp?men=Inversionista no se Eliminó");
 
 			}
 			
