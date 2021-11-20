@@ -5,23 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap CSS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Chewy&family=Lobster&family=Overlock:ital@1&family=Yeseva+One&display=swap"
-	rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-	rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-	crossorigin="anonymous">
-<link rel="stylesheet" href="Css/styles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet"  href="Css/style.css">
+<link rel="stylesheet"  href="Css/normalize.css">
 <title>Web Inversionista</title>
 </head>
 <%-- ESTE ES NUESTRO CABECERO --%>
@@ -57,95 +43,75 @@
 	}
 	%>
 	
-	<section class="Form my-3 mx-7"
-		style="background: url(Imagen/cafe1.jpg)">
-		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-lg-5"></div>
-				<div class="col-lg-7 px-5 pt-5">
-					<h1 style="color: #FFFFFF" class="font-weight-bold py-3">Ingrese
-						datos del inversionista</h1>
-					<form action="controlador_inversionista" method="post">
-						<div class="from-row">
-							<div class="col-lg-7">
-								<input type="text" placeholder="nombre"
-									class="form-control my-3 p-4 " name="nombre"
-									value="<%=nombre%>"> 
-							</div>
-						</div>
+	<main class="loginInver">
+		<div class="img3">
+			<h1>REGISTRO DE INVERSIONISTAS</h1>
+		</div>
+	
+		<div class="container">	
+			<div class="logoCa">
+				<img alt="Logo" src="Imagen/logo.png" class="logoo">
+				<h1>Registro</h1>
+				<form action="Control_login" method="post" class="login-from">
+					
+					<div class="input-group">
+						<label class="input-fill">
+							<input type="text"  name="nombre">
+							<span class="input-label">Nombres</span>
+							<i class="fas fa-envelope"></i>
+						</label>
+					</div>
+					
+					<div class="input-group">
+						<label class="input-fill">
+							<input type="text" name="apellido" >
+							<span class="input-label">Apellidos</span>
+							<i class="fas fa-lock"></i>
+						</label>
+					</div>
 
-						<div class="from-row">
-							<div class="col-lg-7">
-								<input type="text" placeholder="apellido"
-									class="form-control my-3 p-4" name="apellido"
-									value="<%=apellido%>">
-							</div>
-						</div>
+					<div class="input-group">
+						<label class="input-fill">
+							<input type="email" name="correo" >
+							<span class="input-label">Correo Electronico</span>
+							<i class="fas fa-lock"></i>
+						</label>
+					</div>
 
-						<div class="from-row">
-							<div class="col-lg-7">
-								<input type="email" placeholder="correo electrÛnico"
-									class="form-control my-3 p-4" name="correo" value="<%=correo%>">
-							</div>
-						</div>
+					<div class="input-group">
+						<label class="input-fill">
+							<input type="text" name="telefono" >
+							<span class="input-label">Telefono</span>
+							<i class="fas fa-lock"></i>
+						</label>
+					</div>
 
-						<div class="from-row">
-							<div class="col-lg-7" type="text" placeholder="name"
-								aria-label="name">
-								<input type="text" placeholder="telefono"
-									class="form-control my-3 p-4" name="telefono" value="<%=telefono%>">
-							</div>
-						</div>
+					<div class="input-group">
+						<label class="input-fill">
+							<input type="number" name="cedula" >
+							<span class="input-label">Documento</span>
+							<i class="fas fa-lock"></i>
+						</label>
+					</div>
 
+					<div class="input-group">
+						<label class="input-fill">
+							<input type="number" name="contrasena" >
+							<span class="input-label">Contrase√±a</span>
+							<i class="fas fa-lock"></i>
+						</label>
+					</div>
 
-						<div class="from-row">
-							<div class="col-lg-7">
-								<input type="number" placeholder="cedula"
-									class="form-control my-3 p-4" name="cedula"
-									value="<%=cedula%>">
-							</div>
-						</div>
-
-						<div class="from-row">
-							<div class="col-lg-7">
-								<input type="number" placeholder="contraseÒa"
-									class="form-control my-3 p-4" name="contrasena"
-									value="<%=contrasena%>">
-							</div>
-						</div>
-
-
-						<div class="container">
-							<div class="row">
-
-
-								<div class="col-sm my-3">
-									<button type="submit" class="btn btn-success mt-3px mb-5"
-										name="buscar" value="buscar">consultar</button>
-								</div>
-								<div class="col-sm my-3">
-									<button type="submit" class="btn btn-success mt-3px mb-5"
-										name="crear" value="crear">crear</button>
-								</div>
-								<div class="col-sm my-3">
-									<button type="submit" class="btn btn-success mt-3px mb-5"
-										name="actualizar" value="actualizar">actualizar</button>
-								</div>
-								<div class="col-sm my-3">
-									<button type="submit" class="btn btn-success mt-3px mb-5"
-										name="borrar" value="borrar">borrar</button>
-								</div>
-							</div>
-						</div>
-					</form>
-
-
-				</div>
-
+					<input type="submit" name="buscar" value="Buscar" class="btn-login">
+					<input type="submit" name="crear" value="Crear" class="btn-login">
+					<input type="submit" name="actualizar" value="Actualizar" class="btn-login">
+					<input type="submit" name="borrar" value="Borrar" class="btn-login"> 
+				</form>
 			</div>
 		</div>
-		<footer> VIVA EL TINDER &copy; 2020 </footer>
+	
+	</main>
 
-	</section>
+
 </body>
 </html>
