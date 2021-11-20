@@ -70,7 +70,7 @@
 							<div class="col-lg-7">
 								<input type="text" placeholder="nombre"
 									class="form-control my-3 p-4 " name="nombre"
-									value="<%=nombre%>" required> 
+									value="<%=nombre%>"> 
 							</div>
 						</div>
 

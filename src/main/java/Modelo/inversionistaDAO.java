@@ -39,12 +39,13 @@ public class inversionistaDAO {
 	}
 
 	public inversionistaDTO Buscar_Inversionista(String cedula) {
-
+		
+		JOptionPane.showMessageDialog(null,cedula);
 		inversionistaDTO user = null;
 		try {
 			String sql = "select * from inversionista where Cedula_inversionista=?";
 			ps = con.prepareStatement(sql);
-			ps.setString(5, cedula);
+			ps.setString(1, cedula);
 			res = ps.executeQuery();
 			while (res.next()) {
 				user = new inversionistaDTO(res.getString(1), res.getString(2), res.getString(3), res.getString(4),

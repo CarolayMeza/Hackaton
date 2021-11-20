@@ -55,6 +55,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 		
 		Cedula_inversionista=request.getParameter("cedula");
 		inversionistaDTO Buscadto=inversioDao.Buscar_Inversionista(Cedula_inversionista);
+		
 		if(Buscadto!=null) {
 			
 		Nombre_inversionista= Buscadto.getNombre_inversionista();
