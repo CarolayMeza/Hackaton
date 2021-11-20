@@ -53,10 +53,10 @@ public class controlador_agricultor extends HttpServlet {
 		agricultorDTO campeDto = new agricultorDTO(nombre,apellido,correo,telefono,cedula,contrasenia);
 		if(campeDao.Crear_Agricultor(campeDto)) {
 			JOptionPane.showMessageDialog(null, "Campesino Registrado Exitosamente.");
-			response.sendRedirect("campesino.jsp?men= Campesino Registrado Exitosamente.");
+			response.sendRedirect("agricultor.jsp?men= Campesino Registrado Exitosamente.");
 		}else {
 			JOptionPane.showMessageDialog(null, "El Campesino no se Registro.");
-			response.sendRedirect("campesino.jsp?men=El Campesino no se Registro.");
+			response.sendRedirect("agricultor.jsp?men=El Campesino no se Registro.");
 		}
 		}
 		
@@ -74,10 +74,10 @@ public class controlador_agricultor extends HttpServlet {
 			telefono = Auxdto.getTelefono_campesino();
 			contrasenia = Auxdto.getContrasena_campesino();
 			
-			response.sendRedirect("campesino.jsp?cedula="+cedula_campe+"&&nombre="+nombre+"&&apellido="
+			response.sendRedirect("agricultor.jsp?cedula="+cedula_campe+"&&nombre="+nombre+"&&apellido="
 			+apellido+"&&correo="+correo+"&&telefono="+telefono+"&&contrasenia="+contrasenia);
 	}else {
-		response.sendRedirect("campesino.jsp?men=El campesino no existe");
+		response.sendRedirect("agricultor.jsp?men=El campesino no existe");
 	}
 		}
 			
@@ -96,10 +96,10 @@ public class controlador_agricultor extends HttpServlet {
 		agricultorDTO campeDto_Act = new agricultorDTO(nombre,apellido,correo,telefono,cedula_campe,contrasenia);
 		if(campeDao.Actualizar_Agricultor(campeDto_Act)) {
 			JOptionPane.showMessageDialog(null, "Campesino se Actualizo Exitosamente.");
-			response.sendRedirect("campesino.jsp?men=Campesino Actualizado Exitosamente.");
+			response.sendRedirect("agricultor.jsp?men=Campesino Actualizado Exitosamente.");
 		}else {
 			JOptionPane.showMessageDialog(null, "El Campesino no se Modifico.");
-			response.sendRedirect("campesino.jsp?men=El Campesino no se Modifico.");
+			response.sendRedirect("agricultor.jsp?men=El Campesino no se Modifico.");
 		}
 		}
 		
@@ -112,16 +112,16 @@ public class controlador_agricultor extends HttpServlet {
 			int op=JOptionPane.showConfirmDialog(null, "Desea eliminar el Campesino de la :"+cedula_campe);
 			if(op==0) {
 			if(campeDao.Eliminar_Agricultor(cedula_campe)) {
-				response.sendRedirect("campesino.jsp?men=Campesino Eliminado");
+				response.sendRedirect("agricultor.jsp?men=Campesino Eliminado");
 				
 			}else {
-				response.sendRedirect("campesino.jsp?men=Campesino no se Eliminó");
+				response.sendRedirect("agricultor.jsp?men=Campesino no se Eliminó");
 
 			}
 			
 			
 		}else {
-			response.sendRedirect("campesino.jsp");
+			response.sendRedirect("agricultor.jsp");
 
 		}
 	}

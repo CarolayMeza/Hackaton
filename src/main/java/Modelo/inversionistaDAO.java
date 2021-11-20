@@ -22,6 +22,7 @@ public class inversionistaDAO {
 		try {
 			String sql = "insert into inversionista values(?,?,?,?,?,?)";
 			ps = con.prepareStatement(sql);
+			
 			ps.setString(1, inversionista.getNombre_inversionista());
 			ps.setString(2, inversionista.getApellido_inversionista());
 			ps.setString(3, inversionista.getCorreo_inversionista());
@@ -30,7 +31,7 @@ public class inversionistaDAO {
 			ps.setString(6, inversionista.getContrasena_inversionista());
 			
 			resul = ps.executeUpdate() > 0;
-			JOptionPane.showMessageDialog(null, " Cliente insertado ");
+			JOptionPane.showMessageDialog(null, " inversionista insertado ");
 		} catch (SQLException ex) {
 			JOptionPane.showMessageDialog(null, "error al insertar: " + ex);
 		}
@@ -47,7 +48,7 @@ public class inversionistaDAO {
 			res = ps.executeQuery();
 			while (res.next()) {
 				user = new inversionistaDTO(res.getString(1), res.getString(2), res.getString(3), res.getString(4),
-						res.getString(5),res.getString(6),res.getString(7));
+						res.getString(5),res.getString(6));
 			}
 		} catch (SQLException e) {
 //			JOptionPane.showMessageDialog(null,"Error al consultar" +e.getMessage());
@@ -63,13 +64,13 @@ public class inversionistaDAO {
 			String sql = "update inversionista set Nombre_inversionista=?, Apellido_inversionista=?,Correo_inversionista=?, Telefono_iversionista=?, Contrasena_inversionista=?, Fotos_inversionista=? where Cedula_inversionista=?";
 			ps = con.prepareStatement(sql);
 
+			
 			ps.setString(1, user.getNombre_inversionista());
 			ps.setString(2, user.getApellido_inversionista());
 			ps.setString(3, user.getCorreo_inversionista());
 			ps.setString(4, user.getTelefono_iversionista());
 			ps.setString(5, user.getCedula_inversionista());
 			ps.setString(6, user.getContrasena_inversionista());
-			ps.setString(7, user.getFotos_inversionista());
 			
 			resul = ps.executeUpdate() > 0;
 			JOptionPane.showMessageDialog(null, "Se actualizo");

@@ -31,12 +31,12 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	if(request.getParameter("crear")!=null) {
 	String Nombre_inversionista,Apellido_inversionista,Correo_inversionista,Telefono_iversionista,Cedula_inversionista,Contrasena_inversionista;
 	
-	Nombre_inversionista = request.getParameter("Nombre_inversionista");
-	Apellido_inversionista = request.getParameter("Apellido_inversionista");
-	Correo_inversionista = request.getParameter("Correo_inversionista");
-	Telefono_iversionista = request.getParameter("Telefono_iversionista");
-	Cedula_inversionista = request.getParameter("Cedula_inversionista");
-	Contrasena_inversionista = request.getParameter("Contrasena_inversionista");
+	Nombre_inversionista = request.getParameter("nombre");
+	Apellido_inversionista = request.getParameter("apellido");
+	Correo_inversionista = request.getParameter("correo");
+	Telefono_iversionista = request.getParameter("telefono");
+	Cedula_inversionista = request.getParameter("cedula");
+	Contrasena_inversionista = request.getParameter("contrasena");
 	
 	
 	inversionistaDTO inversioDto = new inversionistaDTO(Nombre_inversionista, Apellido_inversionista, Correo_inversionista, Telefono_iversionista, Cedula_inversionista, Contrasena_inversionista, Contrasena_inversionista);
@@ -56,17 +56,17 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 		Cedula_inversionista=request.getParameter("cedula");
 		inversionistaDTO Buscadto=inversioDao.Buscar_Inversionista(Cedula_inversionista);
 		if(Buscadto!=null) {
-		Cedula_inversionista=Buscadto.getCedula_inversionista();
+			
 		Nombre_inversionista= Buscadto.getNombre_inversionista();
 		Apellido_inversionista =Buscadto.getApellido_inversionista();
 		Correo_inversionista = Buscadto.getCorreo_inversionista();
 		Telefono_iversionista= Buscadto.getTelefono_iversionista();
+		Cedula_inversionista=Buscadto.getCedula_inversionista();
 		Contrasena_inversionista=Buscadto.getContrasena_inversionista();
-		//Fotos_inversionista=Buscadto.getFotos_inversionista();
 		
-		response.sendRedirect("inversionista.jsp?cedula="+Cedula_inversionista+"&&nombre="+Nombre_inversionista+"&&apellido="+Apellido_inversionista+"&&correo="+Correo_inversionista+"&&telefono="+Telefono_iversionista+"&&cedula"+Cedula_inversionista+"&&contrasenia"+Contrasena_inversionista);
+		response.sendRedirect("inversionista.jsp?cedula="+Cedula_inversionista+"&&nombre="+Nombre_inversionista+"&&apellido="+Apellido_inversionista+"&&correo="+Correo_inversionista+"&&telefono="+Telefono_iversionista+"&&contrasenia"+Contrasena_inversionista);
 }else {
-	response.sendRedirect("clientes.jsp?men=El cliente no existe");
+	response.sendRedirect("inversionista.jsp?men=El inversionista no existe");
 }
 	}
 	if(request.getParameter("actualizar")!=null) {
@@ -82,10 +82,10 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 		inversionistaDTO inversionistaDto_Act = new inversionistaDTO(Nombre_inversionista, Apellido_inversionista, Correo_inversionista, Telefono_iversionista, Cedula_inversionista, Contrasena_inversionista, Contrasena_inversionista);
 		if(inversioDao.Actualizar_Inversionista(inversionistaDto_Act)) {
 	//	JOptionPane.showMessageDialog(null, "Cliente se Actualizo Exitosamente.");
-			response.sendRedirect("clientes.jsp?men=Cliente Actualizado Exitosamente.");
+			response.sendRedirect("inversionista.jsp?men=Cliente Actualizado Exitosamente.");
 		}else {
 	//	JOptionPane.showMessageDialog(null, "El Cliente no se Modifico.");
-			response.sendRedirect("clientes.jsp?men=El Cliente no se Modifico.");
+			response.sendRedirect("inversionista.jsp?men=El Cliente no se Modifico.");
 		}
 		}
 		

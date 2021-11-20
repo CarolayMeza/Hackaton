@@ -29,7 +29,7 @@
 
 <body>
 <%!String mensaje = "";
-	String nombre = "", apellido = "", correo = "", telefono = "", cedula = "", contrasenia = "",estado="";%>
+	String nombre = "", apellido = "", correo = "", telefono = "", cedula = "", contrasena = "",estado="";%>
 
 	<%
 	if (request.getParameter("cedula") != null) {
@@ -38,7 +38,7 @@
 		correo = request.getParameter("correo");
 		telefono = request.getParameter("telefono");
 		cedula = request.getParameter("cedula");
-		contrasenia = request.getParameter("contrasenia");
+		contrasena = request.getParameter("contrasena");
 		estado = "disabled";
 	}
 	%>
@@ -49,7 +49,7 @@
 		correo = "";
 		telefono = "";
 		cedula = "";
-		contrasenia ="";
+		contrasena ="";
 		estado = "";
 
 		mensaje = request.getParameter("men");
@@ -70,8 +70,7 @@
 							<div class="col-lg-7">
 								<input type="text" placeholder="nombre"
 									class="form-control my-3 p-4 " name="nombre"
-									value="<%=nombre%>" required> <input type="hidden"
-									name="nombre" value="<%=nombre%>">
+									value="<%=nombre%>" required> 
 							</div>
 						</div>
 
@@ -110,8 +109,8 @@
 						<div class="from-row">
 							<div class="col-lg-7">
 								<input type="number" placeholder="contraseña"
-									class="form-control my-3 p-4" name="contrasenia"
-									value="<%=contrasenia%>">
+									class="form-control my-3 p-4" name="contrasena"
+									value="<%=contrasena%>">
 							</div>
 						</div>
 
