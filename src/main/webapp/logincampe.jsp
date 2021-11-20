@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <link rel="stylesheet"  href="Css/style.css">
 <link rel="stylesheet"  href="Css/normalize.css">
+
 <title>Inicio de Sesiï¿½n de Agricultores</title>
 </head>
 <body>
@@ -22,7 +23,6 @@
 
 	<%!
     String ced="", cliente="";
-    
     %>
 
 	<%
@@ -59,7 +59,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 						<i class="fas fa-lock"></i>
 					</label>
 				</div>
-				<a href="#">ï¿½Necesitas Una Cuenta?</a>
+				<a href="agricultor.jsp">¿Register?</a>
 				<input type="submit" name="Ingreso" value="Ingresar" class="btn-login"> 
 			</form>
 		</div>

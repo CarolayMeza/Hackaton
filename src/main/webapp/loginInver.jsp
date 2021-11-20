@@ -59,7 +59,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 						<i class="fas fa-lock"></i>
 					</label>
 				</div>
-				<a href="#">ï¿½Necesitas Una Cuenta?</a>
+				<a href="inversionista.jsp">¿Registrarse?</a>
 				<input type="submit" name="Ingreso" value="Ingresar" class="btn-login"> 
 			</form>
 		</div>

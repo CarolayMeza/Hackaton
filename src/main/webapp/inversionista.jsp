@@ -25,9 +25,9 @@
 <title>Web Inversionista</title>
 </head>
 <%-- ESTE ES NUESTRO CABECERO --%>
-<jsp:include page="head.jsp" /> 
 
 <body>
+<jsp:include page="head3.jsp" />
 <%!String mensaje = "";
 	String nombre = "", apellido = "", correo = "", telefono = "", cedula = "", contrasena = "",estado="";%>
 

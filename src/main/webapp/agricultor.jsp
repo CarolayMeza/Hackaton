@@ -24,10 +24,9 @@
 <link rel="stylesheet" href="Css/styles.css">
 <title>Web Agricultor</title>
 </head>
-<%-- ESTE ES NUESTRO CABECERO --%>
-<jsp:include page="head.jsp" /> 
 
 <body>
+<jsp:include page="head2.jsp" />
 <%!String mensaje = "";
 	String nombre = "", apellido = "", correo = "", telefono = "", cedula = "", contrasenia = "",estado="";%>
 
