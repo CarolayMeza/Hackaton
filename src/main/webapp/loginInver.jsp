@@ -30,7 +30,8 @@
 <link rel="stylesheet" href="Css\style.css">
 <title>Website Click Inversionista</title>
 </head>
-<body style="background: url(Imagen/fondo.jpg)">
+<body>
+<jsp:include page="head.jsp" />
 
 	<%!
     String ced="", cliente="";
@@ -48,15 +49,12 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 
 
-
 	<div class="container text-center my-5">
 		<a class="Hackaton" href="index.jsp"><img
 			style="border-radius: 20px;" src="Imagen/Logo1.jpg" class="img-luid"
 			alt=""></a>
 	</div>
 
-
-	<section>
 
 		<div class="container">
 
@@ -77,7 +75,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 							<!--  Ingresando contraseï¿½a admin123456 -->
 
-							<input type="password" name="Contraseña" placeholder="********"
+							<input type="password" name="Contraseña" placeholder="****"
 								class="form-control my-3 p-4 text-center"> <input
 								type="submit" name="Ingreso" value="Ingresar"
 								class="btn btn-info mt-3px mb-5 text-center"> <a
@@ -89,12 +87,5 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 		</div>
 
-
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-			crossorigin="anonymous"></script>
-
-	</section>
 </body>
 </html>

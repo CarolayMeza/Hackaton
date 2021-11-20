@@ -3,7 +3,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../Imagen/fondo1.png");
     background-repeat: repeat-y;
-    background-size: auto;
+    background-size: 100%;
 
 }
 
@@ -19,8 +19,9 @@ body{
 /*Edita el menu en el cual se encuentra el home*/
 .menu-area{
     list-style: none;
-    height: 60px;
+    height: 50px;
     cursor: pointer;
+    /*background: #eaffd2;*/
 }
 .menu-area div{
     float: right;
@@ -28,7 +29,7 @@ body{
 
 .menu-area div a{
     text-decoration: none;
-    color: rgb(46, 45, 45);
+    color: rgb(82, 81, 81);
     font-weight: bold;
     padding: 15px;
     display: block;
@@ -40,7 +41,7 @@ body{
     color: white;
 }
 
-/*Edita el icono en la barra del menu*/
+/*Edita el icono en la barra del menu
 .menu-area ul li img{
     position: relative;
     display: block;
@@ -48,7 +49,7 @@ body{
     height: 70px;
     
     text-align: center;
-}
+}*/
 
 
 /*Edita los botones de login*/
@@ -56,13 +57,11 @@ body{
     list-style: none;
     padding-top: 8px;
     width: 100%;
-    margin-left: 73%;
-    max-width: 1000px;
     
     
 }
 .login div{
-    float: left;
+    float: right;
 }
 
 .login a {
@@ -91,14 +90,25 @@ body{
     width: 600px;
     float: left;
 }
+/*.img2 div img{
+    height: auto;
+    width: 600px;
+    float: left;
+}
+.img2 {
+	margin-left: 0%;
+}*/
+
 
 .titel1{
     margin-left: 140px;
+    margin-bottom: 40px;
     color: rgb(46, 45, 45);
 }
 
-.parrafos1 div{
-	margin-left: 80px;
+.parrafos1{
+    margin-left: 700px;
+    margin-right: 100px;
 }
 
 .clear{
@@ -112,8 +122,8 @@ body{
     border-radius: 10px;
     background: #0b986a;
     position: absolute;
-    top: 65px;
-    left: 100px;
+    top: 30px;
+    left: 50px;
 }
 
 .caja2{
@@ -122,8 +132,8 @@ body{
     border-radius: 10px;
     background: #ff6961;
     position: absolute;
-    top: 60px;
-    left: 155px;
+    top: 25px;
+    left: 105px;
 }
 
 .caja3{
@@ -132,6 +142,145 @@ body{
     border-radius: 10px;
     background: #0b986a;
     position: absolute;
-    top: 65px;
-    left: 190px;
+    top: 30px;
+    left: 140px;
+}
+
+.loginInver{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	height: 650px;
+}
+
+.loginInver h1{
+    color: #4b4b4b;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+
+.img2{
+	background-image: url(../Imagen/img2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container{
+	/*background-color: red;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.logoCa{
+	text-align: center;
+	width: 60%;
+    font-size: 18px;
+    color: #015700;
+}
+.logoCa img{
+    width: 30;
+    height: 30;
+}
+
+.input-group{
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+}
+
+.input-fill input {
+	border: none;
+	border-bottom: 3px solid #4b4b4b;
+	width: 100%;
+	height: 2rem;
+	font-size: 1.625rem;
+	padding-left: 2rem;
+	line-height: 147.6%;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	
+}
+
+
+.input-fill input:focus {
+    outline: none;
+    border-color: #015700;
+}
+
+.input-fill input:hover{
+    background-color: #d6e9df;
+
+}
+
+.input-fill input:focus + .input-label{
+    top: 0;
+    margin-bottom: 2rem;
+    color: #015700;
+}
+
+.input-fill input:focus ~ i{
+    color: #015700;
+}
+
+.input-fill .input-label{
+    position: absolute;
+    top: 15px;
+    left: 28px;
+    line-height: 147.6%;
+    color: #4b4b4b;
+    transition: top .2s;
+    font-size: 15px;
+}
+
+.input-fill i{
+    position: absolute;
+    top: 19px;
+    left: 0px;
+    color: #4b4b4b;
+    font-size: 1rem;
+}
+
+/*.logoCa img{
+    height: 60px;
+    width: 30%;
+}
+*/
+
+
+.login-from a{
+    display: block;
+    width: 85%;
+    text-align: right;
+    text-decoration: none;
+    color: #4b4b4b;
+    margin-bottom: 1.3rem;
+    font-size: 13px;
+    font-weight: 800;
+    transition: 0.3s ease-in-out all;
+}
+
+.login-from a:hover{
+    color: #ff6961;
+}
+
+.btn-login{
+    border-radius: 3rem;
+    width: 45%;
+    border: 1px solid #015700;
+    line-height: 1.6rem;
+    font-size: 1.3rem;
+    background-color: #015700;
+    color: white;
+    padding: 0.5rem 0;
+    transition: 0.3s ease-in-out all;
+    font-weight: 500;
+} 
+
+.btn-login:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #015700;
 }
