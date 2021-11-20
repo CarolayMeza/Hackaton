@@ -164,6 +164,11 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.img3{
+	background-image: url(../Imagen/img3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .container{
 	/*background-color: red;*/

@@ -54,8 +54,8 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 				
 				<div class="input-group">
 					<label class="input-fill">
-						<input type="password" name="Contraseï¿½a" >
-						<span class="input-label">Contraseña</span>
+						<input type="password" name="Contrasena" >
+						<span class="input-label">Contrasena</span>
 						<i class="fas fa-lock"></i>
 					</label>
 				</div>

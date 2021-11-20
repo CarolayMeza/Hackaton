@@ -35,14 +35,18 @@ public class Control_login extends HttpServlet {
 		
 		if (request.getParameter("Ingreso")!=null) {
 			usuario=request.getParameter("Correo");
-			password=request.getParameter("Contraseña");
+			password=request.getParameter("Contrasena");
 			if(usuario.equals("admininicial") && password.equals("admin123456")) {
 		//		JOptionPane.showMessageDialog(null, "Bienvenido administrador");
 				response.sendRedirect("inversionista.jsp?nom"+usuario);
 			} else{
 		//		JOptionPane.showMessageDialog(null, "usuario o contraseña errados, intente de nuevo");
-				response.sendRedirect("index.jsp");
+				response.sendRedirect("loginInver.jsp");
 			}
+				} else{
+			//		JOptionPane.showMessageDialog(null, "usuario o contraseña errados, intente de nuevo");
+					response.sendRedirect("loginInver.jsp");
+				}
 				
 		}
 		
@@ -50,5 +54,4 @@ public class Control_login extends HttpServlet {
 
 		
 
-}
 }
