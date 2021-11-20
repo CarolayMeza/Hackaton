@@ -7,6 +7,7 @@
 	<meta charset="ISO-8859-1">
 	<title>SOBRE NOSOTROS</title>
 	<link rel="stylesheet"  href="Css/style.css">
+	<link rel="stylesheet"  href="Css/normalize.css">
 </head>
 <body>
 	<jsp:include page="head.jsp" />
@@ -18,16 +19,15 @@
 		<div>
 			<img id="img1" src="Imagen/img1.png" alt="a ver">
 		</div>
+	</div>
 	
-		
-	</div class="parrafos1">
-	<div>
+	<div class="parrafos1">
 		<h3>Lorem, ipsum dolor.</h3>
 		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corporis aperiam animi, quas eos obcaecati ullam doloremque quibusdam, illum nemo quam similique tempora dicta? Suscipit culpa hic doloribus sed cumque?</p>
 		<img src="#" alt="">
 	</div>
 
-	<div>
+	<div class="parrafos1">
 		<h3>Lorem, ipsum dolor.</h3>
 		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corporis aperiam animi, quas eos obcaecati ullam doloremque quibusdam, illum nemo quam similique tempora dicta? Suscipit culpa hic doloribus sed cumque?</p>
 		<img src="#" alt="">

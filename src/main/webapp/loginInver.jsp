@@ -11,26 +11,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap CSS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Chewy&family=Lobster&family=Overlock:ital@1&family=Yeseva+One&display=swap"
-	rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-	rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-	crossorigin="anonymous">
+
 <link rel="stylesheet" href="Css\style.css">
 <title>Website Click Inversionista</title>
 </head>
-<body style="background: url(Imagen/fondo.jpg)">
+<body>
+<jsp:include page="head.jsp" />
 
 	<%!
     String ced="", cliente="";
@@ -48,7 +34,6 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 
 
-
 	<div class="container text-center my-5">
 		<a class="Hackaton" href="index.jsp"><img
 			style="border-radius: 20px;" src="Imagen/Logo1.jpg" class="img-luid"
@@ -56,15 +41,13 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 	</div>
 
 
-	<section>
-
 		<div class="container">
 
 
 			<div class="row justify-content-center">
 				<div align='center' class="col-lg-7  text-center">
 					<h1 style="color: white">BIENVENIDO INVERSIONISTA</h1>
-					<h1 style="color: white">inicio sesión</h1>
+					<h1 style="color: white">inicio sesiï¿½n</h1>
 					<div class="col my-3 text-center">
 
 
@@ -77,7 +60,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 							<!--  Ingresando contraseï¿½a admin123456 -->
 
-							<input type="password" name="Contraseña" placeholder="********"
+							<input type="password" name="Contraseï¿½a" placeholder="****"
 								class="form-control my-3 p-4 text-center"> <input
 								type="submit" name="Ingreso" value="Ingresar"
 								class="btn btn-info mt-3px mb-5 text-center"> <a
@@ -89,12 +72,5 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 		</div>
 
-
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-			crossorigin="anonymous"></script>
-
-	</section>
 </body>
 </html>

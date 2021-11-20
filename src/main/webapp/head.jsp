@@ -14,9 +14,9 @@
 	<div class="caja3"></div>
 	
     <div class="login">
-    	<div><a href="loginInver.jsp">Login Inversionistas</a></div>
-    	<div><a href="logincampe.jsp">Login Agricultor</a></div>
     	<div><a href="#">Salir</a></div>
+    	<div><a href="logincampe.jsp">Login Agricultor</a></div>
+    	<div><a href="loginInver.jsp">Login Inversionistas</a></div>
 	</div>
 	
 	<br>
