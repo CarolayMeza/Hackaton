@@ -64,7 +64,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 
 			<div class="row justify-content-center">
 				<div align='center' class="col-lg-7  text-center">
-					<h1 style="color: white">BIENVENIDO AGRICULTOR</h1>
+					<h1 style="color: white">BIENVENIDO AGRICULTO</h1>
 					<h1 style="color: white">inicio sesión</h1>
 					<div class="col my-3 text-center">
 
