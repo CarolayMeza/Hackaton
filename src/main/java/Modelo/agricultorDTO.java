@@ -28,6 +28,19 @@ public agricultorDTO( String Nombre_campesino, String Apellido_campesino, String
 
 
 
+public agricultorDTO(String nombre_campesino, String apellido_campesino, String correo_campesino,
+		String telefono_campesino, String cedula_campesino, String contrasena_campesino) {
+	super();
+	Nombre_campesino = nombre_campesino;
+	Apellido_campesino = apellido_campesino;
+	Correo_campesino = correo_campesino;
+	Telefono_campesino = telefono_campesino;
+	Cedula_campesino = cedula_campesino;
+	Contrasena_campesino = contrasena_campesino;
+}
+
+
+
 public String getNombre_campesino() {
 	return Nombre_campesino;
 }
