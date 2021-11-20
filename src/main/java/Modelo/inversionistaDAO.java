@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 import Controlador.conexion;
 
 public class inversionistaDAO {
+	
 	conexion conec = new conexion();
 	Connection con = conec.Conectar();
 	PreparedStatement ps = null;
@@ -42,7 +43,7 @@ public class inversionistaDAO {
 		try {
 			String sql = "select * from inversionista where Cedula_inversionista=?";
 			ps = con.prepareStatement(sql);
-			ps.setString(1, cedula);
+			ps.setString(5, cedula);
 			res = ps.executeQuery();
 			while (res.next()) {
 				user = new inversionistaDTO(res.getString(1), res.getString(2), res.getString(3), res.getString(4),

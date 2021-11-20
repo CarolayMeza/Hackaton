@@ -1,6 +1,7 @@
 package Modelo;
 
 public class inversionistaDTO {
+	
    private String Nombre_inversionista;
    private String Apellido_inversionista;
    private String Correo_inversionista;
@@ -22,6 +23,19 @@ public inversionistaDTO(String nombre_inversionista, String apellido_inversionis
 	this.Cedula_inversionista = cedula_inversionista;
 	this.Contrasena_inversionista = contrasena_inversionista;
 	this.Fotos_inversionista = fotos_inversionista;
+}
+
+
+
+public inversionistaDTO(String nombre_inversionista, String apellido_inversionista, String correo_inversionista,
+		String telefono_iversionista, String cedula_inversionista, String contrasena_inversionista) {
+	super();
+	Nombre_inversionista = nombre_inversionista;
+	Apellido_inversionista = apellido_inversionista;
+	Correo_inversionista = correo_inversionista;
+	Telefono_iversionista = telefono_iversionista;
+	Cedula_inversionista = cedula_inversionista;
+	Contrasena_inversionista = contrasena_inversionista;
 }
 
 
