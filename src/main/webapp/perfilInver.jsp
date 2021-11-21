@@ -10,16 +10,16 @@
 <title>Perfil de inversionista</title>
 </head>
 <body>
-    <jsp:include page="head.jsp" />
+    <jsp:include page="head4.jsp" />
     <main>
         <div class="titel">
             <h1>Nombre de inversionista</h1>
         </div>
         
         <div class="container1">
-            <img src="Imagen/arroz.jpg" alt="foto del Agriculto">
+            <img src="Imagen/inversor1.jpg" alt="foto del Agriculto">
             <div>
-                <h3>Subtitulo introductoiro</h3>
+                <h3>Subtitulo introductorio</h3>
                 <p>Informacion del Agricultor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti, consequatur, placeat exercitationem aspernatur nesciunt necessitatibus ut modi labore illo repellat id impedit nostrum. Tempore quibusdam nobis cupiditate sequi velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere minus deserunt dolores, illo molestias ipsum? Quod eum tenetur earum magnam, officiis vel reiciendis maxime sapiente, consequuntur veniam, similique modi. Minima.</p>
                 <a href="#">Anadir a favoritos</a>
                 <a href="#">Contactar</a>
@@ -50,14 +50,6 @@
         </div>
         
 
-        <!--<div class="container1">
-            <img src="Imagen/arroz.jpg" alt="foto del Agriculto">
-            <div>
-                <h3>Subtitulo introductoiro</h3>
-                <p>Informacion del Agricultor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti, consequatur, placeat exercitationem aspernatur nesciunt necessitatibus ut modi labore illo repellat id impedit nostrum. Tempore quibusdam nobis cupiditate sequi velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt nobis voluptates facere non exercitationem aperiam quam dolor, ipsa reprehenderit ducimus numquam ex quibusdam aliquid in vel sint pariatur rerum nesciunt.</p>
-                
-            </div>
-        </div>-->
     </main>
 </body>
 </html>

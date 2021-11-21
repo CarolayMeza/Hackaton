@@ -5,14 +5,14 @@
 
 <head>
 	<meta charset="ISO-8859-1">
-	<title>SOBRE NOSOTROS</title>
+	<title>AgricultoresAgroLine</title>
 	<link rel="stylesheet"  href="Css/style.css">
 	<link rel="stylesheet"  href="Css/normalize.css">
 	<link rel="stylesheet"  href="Css/agro.css">
 </head>
 <body>
 	<jsp:include page="head.jsp" />
-<h1> Los productores de AgroLine</h1>
+<h1> Los agricultores que hacen parte de AgroLine</h1>
             <div class="Agri">
                 
                 <div>

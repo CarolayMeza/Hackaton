@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="ISO-8859-1">
-	<title>SOBRE NOSOTROS</title>
+	<title>InversionistasAgroLine</title>
 	<link rel="stylesheet"  href="Css/style.css">
 	<link rel="stylesheet"  href="Css/normalize.css">
 	<link rel="stylesheet"  href="Css/agro.css">
