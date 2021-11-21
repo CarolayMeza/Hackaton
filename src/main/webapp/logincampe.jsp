@@ -42,8 +42,8 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 	<div class="container">	
 		<div class="logoCa">
 			<img alt="Logo" src="Imagen/logo.png" class="logoo">
-			<h1>Iniciar Sesión</h1>
-			<form action="Control_login" method="post" class="login-from">
+			<h1>Iniciar Sesion</h1>
+			<form action="Control_login.java" method="post" class="login-from">
 				<div class="input-group">
 					<label class="input-fill">
 						<input type="text"  name="Correo">
@@ -59,7 +59,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 						<i class="fas fa-lock"></i>
 					</label>
 				</div>
-				<a href="agricultor.jsp">¿Register?</a>
+				<a href="agricultor.jsp">�Register?</a>
 				<input type="submit" name="Ingreso" value="Ingresar" class="btn-login"> 
 			</form>
 		</div>

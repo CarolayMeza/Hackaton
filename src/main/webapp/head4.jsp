@@ -17,7 +17,7 @@
     <div class="login">
     	<div><a href="index.jsp">Salir</a></div>
     	<!--<div><a href="logincampe.jsp">Login Agricultor</a></div>-->
-    	<div><a href="loginInver.jsp">Login Inversionistas</a></div>
+    	<!--   <div><a href="loginInver.jsp">Login Inversionistas</a></div>   -->
 	</div>
 	
 	<br>

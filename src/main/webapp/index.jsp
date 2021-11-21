@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="ISO-8859-1">
-	<title>SOBRE NOSOTROS</title>
+	<title>Inicio</title>
 	<link rel="stylesheet"  href="Css/style.css">
 	<link rel="stylesheet"  href="Css/normalize.css">
 </head>
@@ -22,20 +22,22 @@
 	</div>
 	
 	<div class="parrafos1">
-		<h3>Lorem, ipsum dolor.</h3>
-		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corporis aperiam animi, quas eos obcaecati ullam doloremque quibusdam, illum nemo quam similique tempora dicta? Suscipit culpa hic doloribus sed cumque?</p>
+		<h3> Nuestra misión</h3>
+		<p>Colombia es una pais lleno de riqueza, esta privilegiado por tener tierras con ricos recursos que proveen alimentos de excelente calidad. Estos deben ser aprovechados y comercializados justamente, con ayuda de Agroline esto será posible.
+		 </p>
 		<img src="#" alt="">
 	</div>
 
 	<div class="parrafos1">
-		<h3>Lorem, ipsum dolor.</h3>
-		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corporis aperiam animi, quas eos obcaecati ullam doloremque quibusdam, illum nemo quam similique tempora dicta? Suscipit culpa hic doloribus sed cumque?</p>
+		<h3>Objetivo</h3>
+		<p> Visibilizar negocios familiares, microempresas, empresas en crecimiento y familias productores de alimentos que han visto afectado su economía por factores como la pandemia, falta de oportunidades. Estos tienen productos de alta calidad y ofrecen precios justos para sus clientes e inversionistas que deseen apoyarlos  </p>
 		<img src="#" alt="">
 	</div>
 
 	<div class="clear">
-		<h3>Lorem, ipsum dolor.</h3>
-		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corporis aperiam animi, quas eos obcaecati ullam doloremque quibusdam, illum nemo quam similique tempora dicta? Suscipit culpa hic doloribus sed cumque?</p>
+		<h3>¿Como lo haremos?</h3>
+		<p> Agroline busca insentivar la economia colombiana a través de un contacto entre comerciantes de productos agricolas e inversionistas, que permitan generar rentabilidad para ambas partes, esto fortalecerá la economía del campo colombiano 
+		 y motiva el comercio justo para las familias campesinas que ofrecen productos de calidad "buenos, ricos, y a precio justo".</p>
 		<img src="#" alt="">
 	</div>
 	
