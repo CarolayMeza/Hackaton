@@ -66,5 +66,12 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
 	</div>
 </main>
 
+
+
+ <footer>
+            AgroLine - Agricultores e inversionistas en un solo lugar WEB &copy; 2021 
+        </footer> 
+        
+        
 </body>
 </html>

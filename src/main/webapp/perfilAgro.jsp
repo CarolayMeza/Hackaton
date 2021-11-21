@@ -58,6 +58,13 @@
                 
             </div>
         </div>-->
+        
+        
+          <footer>
+            AgroLine - Agricultores e inversionistas en un solo lugar WEB &copy; 2021 
+        </footer> 
+        
+        
     </main>
 </body>
 </html>
